@@ -1,0 +1,12 @@
+Source: ros-lunar-rqt-robot-dashboard
+Section: misc
+Priority: extra
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rqt-robot-dashboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-diagnostic-msgs, ros-lunar-python-qt-binding (>= 0.2.19), ros-lunar-qt-gui, ros-lunar-rospy, ros-lunar-rqt-console (>= 0.3.1), ros-lunar-rqt-gui, ros-lunar-rqt-gui-py, ros-lunar-rqt-nav-view, ros-lunar-rqt-robot-monitor
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
