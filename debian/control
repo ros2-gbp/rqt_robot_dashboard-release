@@ -1,0 +1,12 @@
+Source: ros-indigo-rqt-robot-dashboard
+Section: misc
+Priority: extra
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-indigo-rqt-robot-dashboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-diagnostic-msgs, ros-indigo-python-qt-binding (>= 0.2.19), ros-indigo-qt-gui, ros-indigo-rospy, ros-indigo-rqt-console (>= 0.3.1), ros-indigo-rqt-gui, ros-indigo-rqt-gui-py, ros-indigo-rqt-nav-view, ros-indigo-rqt-robot-monitor
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
