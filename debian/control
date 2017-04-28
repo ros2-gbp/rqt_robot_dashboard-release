@@ -1,0 +1,12 @@
+Source: ros-jade-rqt-robot-dashboard
+Section: misc
+Priority: extra
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-jade-rqt-robot-dashboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-diagnostic-msgs, ros-jade-python-qt-binding (>= 0.2.19), ros-jade-qt-gui, ros-jade-rospy, ros-jade-rqt-console (>= 0.3.1), ros-jade-rqt-gui, ros-jade-rqt-gui-py, ros-jade-rqt-nav-view, ros-jade-rqt-robot-monitor
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
