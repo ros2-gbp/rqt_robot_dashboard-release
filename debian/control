@@ -1,0 +1,12 @@
+Source: ros-kinetic-rqt-robot-dashboard
+Section: misc
+Priority: extra
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rqt-robot-dashboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-diagnostic-msgs, ros-kinetic-python-qt-binding (>= 0.2.19), ros-kinetic-qt-gui, ros-kinetic-rospy, ros-kinetic-rqt-console (>= 0.3.1), ros-kinetic-rqt-gui, ros-kinetic-rqt-gui-py, ros-kinetic-rqt-nav-view, ros-kinetic-rqt-robot-monitor
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
