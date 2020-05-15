@@ -1,0 +1,12 @@
+Source: ros-noetic-rqt-robot-dashboard
+Section: misc
+Priority: optional
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-setuptools, ros-noetic-catkin
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-noetic-rqt-robot-dashboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-diagnostic-msgs, ros-noetic-python-qt-binding (>= 0.2.19), ros-noetic-qt-gui, ros-noetic-rospy, ros-noetic-rqt-console (>= 0.3.1), ros-noetic-rqt-gui, ros-noetic-rqt-gui-py, ros-noetic-rqt-nav-view, ros-noetic-rqt-robot-monitor
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
