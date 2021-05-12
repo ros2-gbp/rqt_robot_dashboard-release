@@ -31,6 +31,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 from python_qt_binding.QtCore import QMutex, QMutexLocker, QSize
+# Note: rqt_nav_view has not been migrated to ROS2 yet
 from rqt_nav_view.nav_view import NavViewWidget
 
 from .icon_tool_button import IconToolButton
@@ -45,7 +46,7 @@ class NavViewDashWidget(IconToolButton):
     """
     def __init__(self, context, name='NavView', icon_paths=None):
         self._icons = [['bg-grey.svg', 'ic-navigation.svg']]
-        super(NavViewDashWidget, self).__init__(name, icons=self._icons, suppress_overlays=True, icon_paths=icon_paths)
+        super(NavViewDashWidget, self).__init__(context, name, icons=self._icons, suppress_overlays=True, icon_paths=icon_paths)
         self.context = context
         self.update_state(0)
         self.setFixedSize(self._icons[0].actualSize(QSize(50, 30)))

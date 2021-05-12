@@ -32,7 +32,9 @@
 
 
 import os
-import rospkg
+
+from ament_index_python.packages import get_package_share_directory
+
 from python_qt_binding.QtCore import Signal, QSize
 from python_qt_binding.QtWidgets import QLabel
 from .util import IconHelper
@@ -48,7 +50,7 @@ class BatteryDashWidget(QLabel):
     """
     state_changed = Signal(int)
 
-    def __init__(self, name='Battery', icons=None, charge_icons=None,
+    def __init__(self, context, name='Battery', icons=None, charge_icons=None,
                  icon_paths=None, suppress_overlays=False, stale_icon=None):
         super(BatteryDashWidget, self).__init__()
         if not icons:
@@ -61,10 +63,9 @@ class BatteryDashWidget(QLabel):
             stale_icon = ['ic-battery-0.svg', 'ol-stale-battery.svg']
         icon_paths = (icon_paths if icon_paths else []) + [['rqt_robot_dashboard', 'images']]
         paths = []
-        rp = rospkg.RosPack()
         for path in icon_paths:
-            paths.append(os.path.join(rp.get_path(path[0]), path[1]))
-        self._icon_helper = IconHelper(paths, name)
+            paths.append(os.path.join(get_package_share_directory(path[0]), path[1]))
+        self._icon_helper = IconHelper(context, paths, name)
         # Add stale icon at end of icons so that it gets composited
         icons.append(stale_icon)
         charge_icons.append(stale_icon) # Need icons and charge_icons length to be same
