@@ -1,0 +1,12 @@
+Source: ros-foxy-rqt-robot-dashboard
+Section: misc
+Priority: optional
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-setuptools, ros-foxy-ros-workspace, python3-all, python3-setuptools
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-foxy-rqt-robot-dashboard
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-foxy-diagnostic-msgs, ros-foxy-python-qt-binding (>= 0.2.19), ros-foxy-qt-gui, ros-foxy-rclpy, ros-foxy-rqt-console (>= 0.3.1), ros-foxy-rqt-gui, ros-foxy-rqt-gui-py, ros-foxy-rqt-robot-monitor, ros-foxy-ros-workspace
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
