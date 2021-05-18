@@ -1,3 +1,26 @@
+## rqt_robot_dashboard (galactic) - 0.6.1-1
+
+The packages in the `rqt_robot_dashboard` repository were released into the `galactic` distro by running `/usr/bin/bloom-release rqt_robot_dashboard -r galactic` on `Tue, 18 May 2021 16:52:38 -0000`
+
+The `rqt_robot_dashboard` package was released.
+
+Version of package(s) in repository `rqt_robot_dashboard`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_robot_dashboard.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## rqt_robot_dashboard (foxy) - 0.6.1-1
 
 The packages in the `rqt_robot_dashboard` repository were released into the `foxy` distro by running `/usr/bin/bloom-release rqt_robot_dashboard -r foxy` on `Tue, 18 May 2021 14:00:12 -0000`
