@@ -1,0 +1,12 @@
+Source: ros-galactic-rqt-robot-dashboard
+Section: misc
+Priority: optional
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-setuptools, ros-galactic-ros-workspace, python3-all, python3-setuptools
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-galactic-rqt-robot-dashboard
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-galactic-diagnostic-msgs, ros-galactic-python-qt-binding (>= 0.2.19), ros-galactic-qt-gui, ros-galactic-rclpy, ros-galactic-rqt-console (>= 0.3.1), ros-galactic-rqt-gui, ros-galactic-rqt-gui-py, ros-galactic-rqt-robot-monitor, ros-galactic-ros-workspace
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
