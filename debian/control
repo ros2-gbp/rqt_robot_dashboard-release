@@ -1,0 +1,12 @@
+Source: ros-humble-rqt-robot-dashboard
+Section: misc
+Priority: optional
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-setuptools, ros-humble-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-humble-rqt-robot-dashboard
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-humble-diagnostic-msgs, ros-humble-python-qt-binding (>= 0.2.19), ros-humble-qt-gui, ros-humble-rclpy, ros-humble-rqt-console (>= 0.3.1), ros-humble-rqt-gui, ros-humble-rqt-gui-py, ros-humble-rqt-robot-monitor, ros-humble-ros-workspace
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
