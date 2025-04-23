@@ -1,0 +1,12 @@
+Source: ros-kilted-rqt-robot-dashboard
+Section: misc
+Priority: optional
+Maintainer: Aaron Blasdel <ablasdel@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-setuptools, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: http://wiki.ros.org/rqt_robot_dashboard
+Standards-Version: 3.9.2
+
+Package: ros-kilted-rqt-robot-dashboard
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-kilted-diagnostic-msgs, ros-kilted-python-qt-binding (>= 0.2.19), ros-kilted-qt-gui, ros-kilted-rclpy, ros-kilted-rqt-console (>= 0.3.1), ros-kilted-rqt-gui, ros-kilted-rqt-gui-py, ros-kilted-rqt-robot-monitor, ros-kilted-ros-workspace
+Description: rqt_robot_dashboard provides an infrastructure for building robot dashboard plugins in rqt.
